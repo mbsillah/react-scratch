@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, '/build'),
-        filename: 'index_bundle.js'
+        filename: 'index.js'
     },
     module: {
         rules: [
@@ -22,5 +22,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html'
         })
-    ]
+    ],
+    devServer: {
+        port: 3000
+    }
 }
