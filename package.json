@@ -2,10 +2,30 @@
   "name": "react-scratch",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "sillah2010 <macktastic2014@gmail.com>",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "author": "Musa Sillah",
   "license": "MIT",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
   }
 }
